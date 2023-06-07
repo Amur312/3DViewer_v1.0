@@ -42,3 +42,36 @@ Model *load_obj(const char *filename) {
 }
 
 
+void free_model(Model *model) {
+    if (model) {
+        if (model->vertices) {
+            free(model->vertices);
+        }
+
+        if (model->faces) {
+            free(model->faces);
+        }
+
+        free(model);
+    }
+}
+void print_model(const Model *model) {
+    if (model) {
+        printf("Модель:\n");
+        printf("Количество вершин: %d\n", model->num_vertices);
+        printf("Вершины:\n");
+        for (int i = 0; i < model->num_vertices; i++) {
+            printf("Вершина %d: X: %f Y: %f Z: %f\n", i+1, 
+                   model->vertices[i].x, model->vertices[i].y, model->vertices[i].z);
+        }
+
+        printf("Количество граней: %d\n", model->num_faces);
+        printf("Грани:\n");
+        for (int i = 0; i < model->num_faces; i++) {
+            printf("Грань %d: V1: %d V2: %d V3: %d\n", i+1, 
+                   model->faces[i].v1, model->faces[i].v2, model->faces[i].v3);
+        }
+    } else {
+        printf("Модель не определена.\n");
+    }
+}

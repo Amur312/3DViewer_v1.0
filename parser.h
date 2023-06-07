@@ -37,7 +37,7 @@ typedef struct {
 } Model;
 
 
-
+void free_model(Model *model);
 Model *load_obj(const char *filename);
-
+void print_model(const Model *model);
 #endif  // PARSER_H

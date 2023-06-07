@@ -1,7 +1,6 @@
 #include "transformations.h"
 #include <math.h>
-#include "transformations.h"
-#include <math.h>
+#include "parser.h"
 
 // Вспомогательная функция для умножения вершины на матрицу
 static Vertex multiply_vertex_by_matrix(const Vertex *vertex, const Matrix *matrix) {
@@ -84,7 +83,6 @@ Matrix multiply_matrices(const Matrix *m1,const Matrix *m2,const Matrix *m3 ){
         }
     }
 
-    Matrix final_result;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             final_result.m[i][j] = 0.0;

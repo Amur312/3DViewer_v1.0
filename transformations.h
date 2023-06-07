@@ -13,5 +13,6 @@ void apply_transformation(Model *model, const Matrix *matrix);
 Matrix make_translation_matrix(float tx, float ty, float tz);
 Matrix make_rotation_matrix(float rx, float ry, float rz);
 Matrix make_scale_matrix(float sx, float sy, float sz);
-
+Matrix make_translation_matrix(float tx, float ty, float tz);
+Matrix multiply_matrices(const Matrix *m1,const Matrix *m2,const Matrix *m3 );
 #endif
