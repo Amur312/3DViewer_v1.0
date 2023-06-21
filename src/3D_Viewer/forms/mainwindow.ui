@@ -20,7 +20,7 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>20</x>
       <y>80</y>
       <width>831</width>
       <height>801</height>
@@ -31,7 +31,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>20</x>
       <y>10</y>
       <width>141</width>
       <height>51</height>
@@ -55,7 +55,7 @@
    <widget class="QLineEdit" name="filename">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>270</x>
       <y>20</y>
       <width>581</width>
       <height>31</height>
@@ -75,8 +75,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QSlider" name="rotate_x">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>130</y>
+      <x>900</x>
+      <y>50</y>
       <width>161</width>
       <height>25</height>
      </rect>
@@ -94,8 +94,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QSlider" name="rotate_y">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>170</y>
+      <x>900</x>
+      <y>90</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -110,8 +110,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QSlider" name="rotate_z">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>210</y>
+      <x>900</x>
+      <y>130</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -138,8 +138,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QDoubleSpinBox" name="move_x">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>270</y>
+      <x>1070</x>
+      <y>190</y>
       <width>62</width>
       <height>22</height>
      </rect>
@@ -161,8 +161,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QDoubleSpinBox" name="move_y">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>300</y>
+      <x>1070</x>
+      <y>220</y>
       <width>62</width>
       <height>22</height>
      </rect>
@@ -184,8 +184,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QDoubleSpinBox" name="move_z">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>330</y>
+      <x>1070</x>
+      <y>250</y>
       <width>62</width>
       <height>22</height>
      </rect>
@@ -207,8 +207,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QSlider" name="scale">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>390</y>
+      <x>900</x>
+      <y>310</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -241,8 +241,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="scale_num">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>390</y>
+      <x>1080</x>
+      <y>310</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -260,8 +260,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>480</y>
+      <x>990</x>
+      <y>400</y>
       <width>141</width>
       <height>32</height>
      </rect>
@@ -290,8 +290,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>100</y>
+      <x>930</x>
+      <y>20</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -313,8 +313,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QLineEdit" name="rotare_2">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>240</y>
+      <x>930</x>
+      <y>160</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -336,8 +336,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QLineEdit" name="rotare_3">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>360</y>
+      <x>930</x>
+      <y>280</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -359,8 +359,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QLineEdit" name="rotare_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>480</y>
+      <x>870</x>
+      <y>400</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -379,8 +379,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_5">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>520</y>
+      <x>930</x>
+      <y>440</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -399,8 +399,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QLineEdit" name="rotare_6">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>550</y>
+      <x>870</x>
+      <y>470</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -422,8 +422,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QComboBox" name="comboBox_2">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>550</y>
+      <x>990</x>
+      <y>470</y>
       <width>141</width>
       <height>32</height>
      </rect>
@@ -452,8 +452,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_7">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>590</y>
+      <x>870</x>
+      <y>510</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -475,8 +475,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QSlider" name="ribs_thick">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>590</y>
+      <x>970</x>
+      <y>510</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -509,8 +509,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_9">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>670</y>
+      <x>930</x>
+      <y>590</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -532,8 +532,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QLineEdit" name="rotare_10">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>700</y>
+      <x>870</x>
+      <y>620</y>
       <width>171</width>
       <height>21</height>
      </rect>
@@ -552,8 +552,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QComboBox" name="comboBox_3">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>700</y>
+      <x>1050</x>
+      <y>620</y>
       <width>101</width>
       <height>32</height>
      </rect>
@@ -587,8 +587,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_11">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>435</y>
+      <x>930</x>
+      <y>355</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -607,8 +607,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QSlider" name="ribs_thick_2">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>730</y>
+      <x>990</x>
+      <y>650</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -641,8 +641,8 @@ background-color: rgb(91, 87, 217);</string>
    <widget class="QLineEdit" name="rotare_12">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>730</y>
+      <x>870</x>
+      <y>650</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -661,8 +661,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_13">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>790</y>
+      <x>870</x>
+      <y>710</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -681,8 +681,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QSlider" name="ribs_thick_3">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>790</y>
+      <x>990</x>
+      <y>710</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -715,8 +715,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QDoubleSpinBox" name="x_num2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>130</y>
+      <x>1070</x>
+      <y>50</y>
       <width>62</width>
       <height>22</height>
      </rect>
@@ -741,8 +741,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QDoubleSpinBox" name="y_num2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>170</y>
+      <x>1070</x>
+      <y>90</y>
       <width>62</width>
       <height>22</height>
      </rect>
@@ -767,8 +767,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QDoubleSpinBox" name="z_num2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>210</y>
+      <x>1070</x>
+      <y>130</y>
       <width>62</width>
       <height>22</height>
      </rect>
@@ -793,8 +793,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_14">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>630</y>
+      <x>870</x>
+      <y>550</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -816,8 +816,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QSlider" name="rib_color">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>630</y>
+      <x>970</x>
+      <y>550</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -850,8 +850,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QSlider" name="dot_color">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>760</y>
+      <x>990</x>
+      <y>680</y>
       <width>160</width>
       <height>25</height>
      </rect>
@@ -884,8 +884,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_15">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>760</y>
+      <x>870</x>
+      <y>680</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -904,8 +904,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_8">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>10</y>
+      <x>870</x>
+      <y>750</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -930,8 +930,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_16">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>40</y>
+      <x>870</x>
+      <y>780</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -953,8 +953,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="ribs">
     <property name="geometry">
      <rect>
-      <x>1070</x>
-      <y>40</y>
+      <x>950</x>
+      <y>780</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -976,8 +976,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="dots">
     <property name="geometry">
      <rect>
-      <x>1070</x>
-      <y>10</y>
+      <x>950</x>
+      <y>750</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -999,8 +999,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QPushButton" name="screen">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>830</y>
+      <x>870</x>
+      <y>820</y>
       <width>91</width>
       <height>51</height>
      </rect>
@@ -1023,8 +1023,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_17">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>130</y>
+      <x>870</x>
+      <y>50</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -1046,8 +1046,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_18">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>170</y>
+      <x>870</x>
+      <y>90</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -1072,8 +1072,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_19">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>210</y>
+      <x>870</x>
+      <y>130</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -1095,8 +1095,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_20">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>270</y>
+      <x>870</x>
+      <y>190</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -1118,8 +1118,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_21">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>300</y>
+      <x>870</x>
+      <y>220</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -1141,8 +1141,8 @@ background-color: rgb(70, 70, 217);</string>
    <widget class="QLineEdit" name="rotare_22">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>330</y>
+      <x>870</x>
+      <y>250</y>
       <width>131</width>
       <height>21</height>
      </rect>
