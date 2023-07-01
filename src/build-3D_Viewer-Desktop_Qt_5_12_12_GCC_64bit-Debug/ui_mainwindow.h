@@ -76,6 +76,7 @@ public:
     QLineEdit *rotare_20;
     QLineEdit *rotare_21;
     QLineEdit *rotare_22;
+    QPushButton *pushButton_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -89,13 +90,13 @@ public:
         centralwidget->setObjectName("centralwidget");
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(320, 80, 831, 801));
+        layoutWidget->setGeometry(QRect(20, 80, 831, 801));
         gridLayout_widget = new QGridLayout(layoutWidget);
         gridLayout_widget->setObjectName("gridLayout_widget");
         gridLayout_widget->setContentsMargins(0, 0, 0, 0);
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(80, 10, 141, 51));
+        pushButton->setGeometry(QRect(20, 10, 141, 51));
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);\n"
@@ -107,25 +108,25 @@ public:
 "}"));
         filename = new QLineEdit(centralwidget);
         filename->setObjectName("filename");
-        filename->setGeometry(QRect(370, 20, 581, 31));
+        filename->setGeometry(QRect(270, 20, 581, 31));
         filename->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(91, 87, 217);"));
         filename->setAlignment(Qt::AlignCenter);
         filename->setReadOnly(true);
         rotate_x = new QSlider(centralwidget);
         rotate_x->setObjectName("rotate_x");
-        rotate_x->setGeometry(QRect(50, 130, 161, 25));
+        rotate_x->setGeometry(QRect(900, 50, 161, 25));
         rotate_x->setMaximum(360);
         rotate_x->setValue(0);
         rotate_x->setOrientation(Qt::Horizontal);
         rotate_y = new QSlider(centralwidget);
         rotate_y->setObjectName("rotate_y");
-        rotate_y->setGeometry(QRect(50, 170, 160, 25));
+        rotate_y->setGeometry(QRect(900, 90, 160, 25));
         rotate_y->setMaximum(360);
         rotate_y->setOrientation(Qt::Horizontal);
         rotate_z = new QSlider(centralwidget);
         rotate_z->setObjectName("rotate_z");
-        rotate_z->setGeometry(QRect(50, 210, 160, 25));
+        rotate_z->setGeometry(QRect(900, 130, 160, 25));
         rotate_z->setMaximum(360);
         rotate_z->setValue(0);
         rotate_z->setTracking(true);
@@ -134,7 +135,7 @@ public:
         rotate_z->setTickPosition(QSlider::NoTicks);
         move_x = new QDoubleSpinBox(centralwidget);
         move_x->setObjectName("move_x");
-        move_x->setGeometry(QRect(220, 270, 62, 22));
+        move_x->setGeometry(QRect(1070, 190, 62, 22));
         move_x->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         move_x->setAlignment(Qt::AlignCenter);
@@ -142,7 +143,7 @@ public:
         move_x->setMaximum(1000.000000000000000);
         move_y = new QDoubleSpinBox(centralwidget);
         move_y->setObjectName("move_y");
-        move_y->setGeometry(QRect(220, 300, 62, 22));
+        move_y->setGeometry(QRect(1070, 220, 62, 22));
         move_y->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         move_y->setAlignment(Qt::AlignCenter);
@@ -150,7 +151,7 @@ public:
         move_y->setMaximum(1000.000000000000000);
         move_z = new QDoubleSpinBox(centralwidget);
         move_z->setObjectName("move_z");
-        move_z->setGeometry(QRect(220, 330, 62, 22));
+        move_z->setGeometry(QRect(1070, 250, 62, 22));
         move_z->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         move_z->setAlignment(Qt::AlignCenter);
@@ -158,7 +159,7 @@ public:
         move_z->setMaximum(1000.000000000000000);
         scale = new QSlider(centralwidget);
         scale->setObjectName("scale");
-        scale->setGeometry(QRect(50, 390, 160, 25));
+        scale->setGeometry(QRect(900, 310, 160, 25));
         scale->setAcceptDrops(false);
         scale->setMinimum(-9);
         scale->setMaximum(9);
@@ -169,14 +170,14 @@ public:
         scale->setTickPosition(QSlider::NoTicks);
         scale_num = new QLineEdit(centralwidget);
         scale_num->setObjectName("scale_num");
-        scale_num->setGeometry(QRect(230, 390, 51, 21));
+        scale_num->setGeometry(QRect(1080, 310, 51, 21));
         scale_num->setAlignment(Qt::AlignCenter);
         scale_num->setReadOnly(true);
         comboBox = new QComboBox(centralwidget);
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->setObjectName("comboBox");
-        comboBox->setGeometry(QRect(140, 480, 141, 32));
+        comboBox->setGeometry(QRect(990, 400, 141, 32));
         comboBox->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);\n"
@@ -187,40 +188,40 @@ public:
 "}"));
         rotare = new QLineEdit(centralwidget);
         rotare->setObjectName("rotare");
-        rotare->setGeometry(QRect(80, 100, 141, 21));
+        rotare->setGeometry(QRect(930, 20, 141, 21));
         rotare->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(91, 87, 217);"));
         rotare->setAlignment(Qt::AlignCenter);
         rotare->setReadOnly(true);
         rotare_2 = new QLineEdit(centralwidget);
         rotare_2->setObjectName("rotare_2");
-        rotare_2->setGeometry(QRect(80, 240, 141, 21));
+        rotare_2->setGeometry(QRect(930, 160, 141, 21));
         rotare_2->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(91, 87, 217);"));
         rotare_2->setAlignment(Qt::AlignCenter);
         rotare_2->setReadOnly(true);
         rotare_3 = new QLineEdit(centralwidget);
         rotare_3->setObjectName("rotare_3");
-        rotare_3->setGeometry(QRect(80, 360, 141, 21));
+        rotare_3->setGeometry(QRect(930, 280, 141, 21));
         rotare_3->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(91, 87, 217);"));
         rotare_3->setAlignment(Qt::AlignCenter);
         rotare_3->setReadOnly(true);
         rotare_4 = new QLineEdit(centralwidget);
         rotare_4->setObjectName("rotare_4");
-        rotare_4->setGeometry(QRect(20, 480, 111, 21));
+        rotare_4->setGeometry(QRect(870, 400, 111, 21));
         rotare_4->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_4->setReadOnly(true);
         rotare_5 = new QLineEdit(centralwidget);
         rotare_5->setObjectName("rotare_5");
-        rotare_5->setGeometry(QRect(80, 520, 141, 21));
+        rotare_5->setGeometry(QRect(930, 440, 141, 21));
         rotare_5->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(91, 87, 217);"));
         rotare_5->setReadOnly(true);
         rotare_6 = new QLineEdit(centralwidget);
         rotare_6->setObjectName("rotare_6");
-        rotare_6->setGeometry(QRect(20, 550, 91, 21));
+        rotare_6->setGeometry(QRect(870, 470, 91, 21));
         rotare_6->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_6->setAlignment(Qt::AlignCenter);
@@ -229,7 +230,7 @@ public:
         comboBox_2->addItem(QString());
         comboBox_2->addItem(QString());
         comboBox_2->setObjectName("comboBox_2");
-        comboBox_2->setGeometry(QRect(140, 550, 141, 32));
+        comboBox_2->setGeometry(QRect(990, 470, 141, 32));
         comboBox_2->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);\n"
@@ -240,14 +241,14 @@ public:
 "}"));
         rotare_7 = new QLineEdit(centralwidget);
         rotare_7->setObjectName("rotare_7");
-        rotare_7->setGeometry(QRect(20, 590, 91, 21));
+        rotare_7->setGeometry(QRect(870, 510, 91, 21));
         rotare_7->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_7->setAlignment(Qt::AlignCenter);
         rotare_7->setReadOnly(true);
         ribs_thick = new QSlider(centralwidget);
         ribs_thick->setObjectName("ribs_thick");
-        ribs_thick->setGeometry(QRect(120, 590, 160, 25));
+        ribs_thick->setGeometry(QRect(970, 510, 160, 25));
         ribs_thick->setAcceptDrops(false);
         ribs_thick->setMinimum(1);
         ribs_thick->setMaximum(10);
@@ -258,14 +259,14 @@ public:
         ribs_thick->setTickPosition(QSlider::NoTicks);
         rotare_9 = new QLineEdit(centralwidget);
         rotare_9->setObjectName("rotare_9");
-        rotare_9->setGeometry(QRect(80, 670, 141, 21));
+        rotare_9->setGeometry(QRect(930, 590, 141, 21));
         rotare_9->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(91, 87, 217);"));
         rotare_9->setAlignment(Qt::AlignCenter);
         rotare_9->setReadOnly(true);
         rotare_10 = new QLineEdit(centralwidget);
         rotare_10->setObjectName("rotare_10");
-        rotare_10->setGeometry(QRect(20, 700, 171, 21));
+        rotare_10->setGeometry(QRect(870, 620, 171, 21));
         rotare_10->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_10->setReadOnly(true);
@@ -274,7 +275,7 @@ public:
         comboBox_3->addItem(QString());
         comboBox_3->addItem(QString());
         comboBox_3->setObjectName("comboBox_3");
-        comboBox_3->setGeometry(QRect(200, 700, 101, 32));
+        comboBox_3->setGeometry(QRect(1050, 620, 101, 32));
         comboBox_3->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);\n"
@@ -285,13 +286,13 @@ public:
 "}"));
         rotare_11 = new QLineEdit(centralwidget);
         rotare_11->setObjectName("rotare_11");
-        rotare_11->setGeometry(QRect(80, 435, 141, 21));
+        rotare_11->setGeometry(QRect(930, 355, 141, 21));
         rotare_11->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(91, 87, 217);"));
         rotare_11->setReadOnly(true);
         ribs_thick_2 = new QSlider(centralwidget);
         ribs_thick_2->setObjectName("ribs_thick_2");
-        ribs_thick_2->setGeometry(QRect(140, 730, 160, 25));
+        ribs_thick_2->setGeometry(QRect(990, 650, 160, 25));
         ribs_thick_2->setAcceptDrops(false);
         ribs_thick_2->setMinimum(1);
         ribs_thick_2->setMaximum(10);
@@ -302,19 +303,19 @@ public:
         ribs_thick_2->setTickPosition(QSlider::NoTicks);
         rotare_12 = new QLineEdit(centralwidget);
         rotare_12->setObjectName("rotare_12");
-        rotare_12->setGeometry(QRect(20, 730, 91, 21));
+        rotare_12->setGeometry(QRect(870, 650, 91, 21));
         rotare_12->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_12->setReadOnly(true);
         rotare_13 = new QLineEdit(centralwidget);
         rotare_13->setObjectName("rotare_13");
-        rotare_13->setGeometry(QRect(20, 790, 91, 21));
+        rotare_13->setGeometry(QRect(870, 710, 91, 21));
         rotare_13->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_13->setReadOnly(true);
         ribs_thick_3 = new QSlider(centralwidget);
         ribs_thick_3->setObjectName("ribs_thick_3");
-        ribs_thick_3->setGeometry(QRect(140, 790, 160, 25));
+        ribs_thick_3->setGeometry(QRect(990, 710, 160, 25));
         ribs_thick_3->setAcceptDrops(false);
         ribs_thick_3->setMinimum(0);
         ribs_thick_3->setMaximum(7);
@@ -325,7 +326,7 @@ public:
         ribs_thick_3->setTickPosition(QSlider::NoTicks);
         x_num2 = new QDoubleSpinBox(centralwidget);
         x_num2->setObjectName("x_num2");
-        x_num2->setGeometry(QRect(220, 130, 62, 22));
+        x_num2->setGeometry(QRect(1070, 50, 62, 22));
         x_num2->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         x_num2->setAlignment(Qt::AlignCenter);
@@ -334,7 +335,7 @@ public:
         x_num2->setMaximum(360.000000000000000);
         y_num2 = new QDoubleSpinBox(centralwidget);
         y_num2->setObjectName("y_num2");
-        y_num2->setGeometry(QRect(220, 170, 62, 22));
+        y_num2->setGeometry(QRect(1070, 90, 62, 22));
         y_num2->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         y_num2->setAlignment(Qt::AlignCenter);
@@ -343,7 +344,7 @@ public:
         y_num2->setMaximum(360.000000000000000);
         z_num2 = new QDoubleSpinBox(centralwidget);
         z_num2->setObjectName("z_num2");
-        z_num2->setGeometry(QRect(220, 210, 62, 22));
+        z_num2->setGeometry(QRect(1070, 130, 62, 22));
         z_num2->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         z_num2->setAlignment(Qt::AlignCenter);
@@ -352,14 +353,14 @@ public:
         z_num2->setMaximum(360.000000000000000);
         rotare_14 = new QLineEdit(centralwidget);
         rotare_14->setObjectName("rotare_14");
-        rotare_14->setGeometry(QRect(20, 630, 91, 21));
+        rotare_14->setGeometry(QRect(870, 550, 91, 21));
         rotare_14->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_14->setAlignment(Qt::AlignCenter);
         rotare_14->setReadOnly(true);
         rib_color = new QSlider(centralwidget);
         rib_color->setObjectName("rib_color");
-        rib_color->setGeometry(QRect(120, 630, 160, 25));
+        rib_color->setGeometry(QRect(970, 550, 160, 25));
         rib_color->setAcceptDrops(false);
         rib_color->setMinimum(0);
         rib_color->setMaximum(7);
@@ -370,7 +371,7 @@ public:
         rib_color->setTickPosition(QSlider::NoTicks);
         dot_color = new QSlider(centralwidget);
         dot_color->setObjectName("dot_color");
-        dot_color->setGeometry(QRect(140, 760, 160, 25));
+        dot_color->setGeometry(QRect(990, 680, 160, 25));
         dot_color->setAcceptDrops(false);
         dot_color->setMinimum(0);
         dot_color->setMaximum(7);
@@ -381,13 +382,13 @@ public:
         dot_color->setTickPosition(QSlider::NoTicks);
         rotare_15 = new QLineEdit(centralwidget);
         rotare_15->setObjectName("rotare_15");
-        rotare_15->setGeometry(QRect(20, 760, 91, 21));
+        rotare_15->setGeometry(QRect(870, 680, 91, 21));
         rotare_15->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_15->setReadOnly(true);
         rotare_8 = new QLineEdit(centralwidget);
         rotare_8->setObjectName("rotare_8");
-        rotare_8->setGeometry(QRect(990, 10, 51, 21));
+        rotare_8->setGeometry(QRect(870, 750, 51, 21));
         rotare_8->setStyleSheet(QString::fromUtf8("        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);\n"
 "\n"
@@ -397,28 +398,28 @@ public:
         rotare_8->setReadOnly(true);
         rotare_16 = new QLineEdit(centralwidget);
         rotare_16->setObjectName("rotare_16");
-        rotare_16->setGeometry(QRect(990, 40, 51, 21));
+        rotare_16->setGeometry(QRect(870, 780, 51, 21));
         rotare_16->setStyleSheet(QString::fromUtf8("        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);"));
         rotare_16->setAlignment(Qt::AlignCenter);
         rotare_16->setReadOnly(true);
         ribs = new QLineEdit(centralwidget);
         ribs->setObjectName("ribs");
-        ribs->setGeometry(QRect(1070, 40, 81, 21));
+        ribs->setGeometry(QRect(950, 780, 81, 21));
         ribs->setStyleSheet(QString::fromUtf8("        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);"));
         ribs->setAlignment(Qt::AlignCenter);
         ribs->setReadOnly(true);
         dots = new QLineEdit(centralwidget);
         dots->setObjectName("dots");
-        dots->setGeometry(QRect(1070, 10, 81, 21));
+        dots->setGeometry(QRect(950, 750, 81, 21));
         dots->setStyleSheet(QString::fromUtf8("        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);"));
         dots->setAlignment(Qt::AlignCenter);
         dots->setReadOnly(true);
         screen = new QPushButton(centralwidget);
         screen->setObjectName("screen");
-        screen->setGeometry(QRect(20, 830, 91, 51));
+        screen->setGeometry(QRect(870, 820, 91, 51));
         screen->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "        color: white;\n"
 "    	   background-color: rgb(91, 87, 217);\n"
@@ -430,14 +431,14 @@ public:
 "}"));
         rotare_17 = new QLineEdit(centralwidget);
         rotare_17->setObjectName("rotare_17");
-        rotare_17->setGeometry(QRect(20, 130, 16, 21));
+        rotare_17->setGeometry(QRect(870, 50, 16, 21));
         rotare_17->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_17->setAlignment(Qt::AlignCenter);
         rotare_17->setReadOnly(true);
         rotare_18 = new QLineEdit(centralwidget);
         rotare_18->setObjectName("rotare_18");
-        rotare_18->setGeometry(QRect(20, 170, 16, 21));
+        rotare_18->setGeometry(QRect(870, 90, 16, 21));
         rotare_18->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_18->setAlignment(Qt::AlignCenter);
@@ -445,32 +446,35 @@ public:
         rotare_18->setReadOnly(true);
         rotare_19 = new QLineEdit(centralwidget);
         rotare_19->setObjectName("rotare_19");
-        rotare_19->setGeometry(QRect(20, 210, 16, 21));
+        rotare_19->setGeometry(QRect(870, 130, 16, 21));
         rotare_19->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_19->setAlignment(Qt::AlignCenter);
         rotare_19->setReadOnly(true);
         rotare_20 = new QLineEdit(centralwidget);
         rotare_20->setObjectName("rotare_20");
-        rotare_20->setGeometry(QRect(20, 270, 131, 21));
+        rotare_20->setGeometry(QRect(870, 190, 131, 21));
         rotare_20->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_20->setAlignment(Qt::AlignCenter);
         rotare_20->setReadOnly(true);
         rotare_21 = new QLineEdit(centralwidget);
         rotare_21->setObjectName("rotare_21");
-        rotare_21->setGeometry(QRect(20, 300, 131, 21));
+        rotare_21->setGeometry(QRect(870, 220, 131, 21));
         rotare_21->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_21->setAlignment(Qt::AlignCenter);
         rotare_21->setReadOnly(true);
         rotare_22 = new QLineEdit(centralwidget);
         rotare_22->setObjectName("rotare_22");
-        rotare_22->setGeometry(QRect(20, 330, 131, 21));
+        rotare_22->setGeometry(QRect(870, 250, 131, 21));
         rotare_22->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(70, 70, 217);"));
         rotare_22->setAlignment(Qt::AlignCenter);
         rotare_22->setReadOnly(true);
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(1000, 814, 89, 51));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -525,6 +529,7 @@ public:
         rotare_20->setText(QCoreApplication::translate("MainWindow", "\320\237\320\265\321\200\320\265\320\274\320\265\321\211\320\265\320\275\320\270\320\265 X", nullptr));
         rotare_21->setText(QCoreApplication::translate("MainWindow", "\320\237\320\265\321\200\320\265\320\274\320\265\321\211\320\265\320\275\320\270\320\265 Y", nullptr));
         rotare_22->setText(QCoreApplication::translate("MainWindow", "\320\237\320\265\321\200\320\265\320\274\320\265\321\211\320\265\320\275\320\270\320\265 Z", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "GIF", nullptr));
     } // retranslateUi
 
 };

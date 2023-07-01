@@ -1,12 +1,17 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QMessageBox>
 #include "widget.h"
-
+#include "qgifimage.h"
+#include <QThread>
+#include <QTimer>
+#include <QWidget>
 #include <QFileDialog>
 #include <QMainWindow>
 #include <QOpenGLWidget>
 #include <QStandardPaths>
+#include <QMovie>
+#include <QImageWriter>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,7 +25,7 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
-
+    QImage image;
 private slots:
     void on_pushButton_clicked();
 
@@ -66,10 +71,18 @@ private slots:
     void put_settings();
 
     void on_screen_pressed();
-
+    void on_pushButton_2_clicked();
+    void gif_timer();
+    void error_message(QString message);
+    void gif_creator();
 private:
     void form_color(float* r, float* g, float* b, float value);
     Ui::MainWindow* ui;
     widget* myWidget;
+    int numberFps;
+    QTimer *gifTmr;
+    QGifImage *gifImg;
+    QString gifFileName;
+
 };
 #endif  // MAINWINDOW_H

@@ -1161,6 +1161,19 @@ background-color: rgb(70, 70, 217);</string>
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>814</y>
+      <width>89</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GIF</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

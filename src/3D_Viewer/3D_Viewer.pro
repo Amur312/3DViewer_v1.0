@@ -1,5 +1,5 @@
 QT       += core gui opengl openglwidgets
-
+include(QtGifImage/src/gifimage/qtgifimage.pri)
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -18,7 +18,9 @@ SOURCES += \
 HEADERS += \
     ../backend/s21_parser.h \
     headers/mainwindow.h \
-    headers/widget.h
+    headers/widget.h \
+
+
 
 FORMS += \
     forms/mainwindow.ui

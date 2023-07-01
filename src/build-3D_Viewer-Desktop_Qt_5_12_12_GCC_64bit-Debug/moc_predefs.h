@@ -239,6 +239,7 @@
 #define __FLT32X_MIN__ 2.22507385850720138309023271733240406e-308F32x
 #define __SIG_ATOMIC_MAX__ 0x7fffffff
 #define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
+#define __cpp_sized_deallocation 201309L
 #define __STDC_IEC_60559_BFP__ 201404L
 #define __SIZEOF_PTRDIFF_T__ 8
 #define __LDBL_DIG__ 18
@@ -280,7 +281,6 @@
 #define __INT_FAST8_MAX__ 0x7f
 #define __FLT128_MAX__ 1.18973149535723176508575932662800702e+4932F128
 #define __INTPTR_MAX__ 0x7fffffffffffffffL
-#define __cpp_sized_deallocation 201309L
 #define __cpp_guaranteed_copy_elision 201606L
 #define linux 1
 #define __FLT64_HAS_QUIET_NAN__ 1

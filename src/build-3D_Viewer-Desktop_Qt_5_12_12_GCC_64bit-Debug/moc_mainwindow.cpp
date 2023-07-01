@@ -64,11 +64,16 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "on_dot_color_valueChanged",
     "save_settings",
     "put_settings",
-    "on_screen_pressed"
+    "on_screen_pressed",
+    "on_pushButton_2_clicked",
+    "gif_timer",
+    "error_message",
+    "message",
+    "gif_creator"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[54];
+    uint offsetsAndSizes[64];
     char stringdata0[11];
     char stringdata1[22];
     char stringdata2[1];
@@ -96,6 +101,11 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata24[14];
     char stringdata25[13];
     char stringdata26[18];
+    char stringdata27[24];
+    char stringdata28[10];
+    char stringdata29[14];
+    char stringdata30[8];
+    char stringdata31[12];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -127,7 +137,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(534, 25),  // "on_dot_color_valueChanged"
         QT_MOC_LITERAL(560, 13),  // "save_settings"
         QT_MOC_LITERAL(574, 12),  // "put_settings"
-        QT_MOC_LITERAL(587, 17)   // "on_screen_pressed"
+        QT_MOC_LITERAL(587, 17),  // "on_screen_pressed"
+        QT_MOC_LITERAL(605, 23),  // "on_pushButton_2_clicked"
+        QT_MOC_LITERAL(629, 9),  // "gif_timer"
+        QT_MOC_LITERAL(639, 13),  // "error_message"
+        QT_MOC_LITERAL(653, 7),  // "message"
+        QT_MOC_LITERAL(661, 11)   // "gif_creator"
     },
     "MainWindow",
     "on_pushButton_clicked",
@@ -155,7 +170,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "on_dot_color_valueChanged",
     "save_settings",
     "put_settings",
-    "on_screen_pressed"
+    "on_screen_pressed",
+    "on_pushButton_2_clicked",
+    "gif_timer",
+    "error_message",
+    "message",
+    "gif_creator"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -167,7 +187,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      23,   14, // methods
+      27,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -175,29 +195,33 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  152,    2, 0x08,    1 /* Private */,
-       3,    1,  153,    2, 0x08,    2 /* Private */,
-       5,    1,  156,    2, 0x08,    4 /* Private */,
-       6,    1,  159,    2, 0x08,    6 /* Private */,
-       7,    0,  162,    2, 0x08,    8 /* Private */,
-       8,    0,  163,    2, 0x08,    9 /* Private */,
-       9,    0,  164,    2, 0x08,   10 /* Private */,
-      10,    1,  165,    2, 0x08,   11 /* Private */,
-      11,    0,  168,    2, 0x08,   13 /* Private */,
-      12,    1,  169,    2, 0x08,   14 /* Private */,
-      14,    1,  172,    2, 0x08,   16 /* Private */,
-      15,    1,  175,    2, 0x08,   18 /* Private */,
-      16,    1,  178,    2, 0x08,   20 /* Private */,
-      17,    1,  181,    2, 0x08,   22 /* Private */,
-      18,    1,  184,    2, 0x08,   24 /* Private */,
-      19,    0,  187,    2, 0x08,   26 /* Private */,
-      20,    0,  188,    2, 0x08,   27 /* Private */,
-      21,    0,  189,    2, 0x08,   28 /* Private */,
-      22,    1,  190,    2, 0x08,   29 /* Private */,
-      23,    1,  193,    2, 0x08,   31 /* Private */,
-      24,    0,  196,    2, 0x08,   33 /* Private */,
-      25,    0,  197,    2, 0x08,   34 /* Private */,
-      26,    0,  198,    2, 0x08,   35 /* Private */,
+       1,    0,  176,    2, 0x08,    1 /* Private */,
+       3,    1,  177,    2, 0x08,    2 /* Private */,
+       5,    1,  180,    2, 0x08,    4 /* Private */,
+       6,    1,  183,    2, 0x08,    6 /* Private */,
+       7,    0,  186,    2, 0x08,    8 /* Private */,
+       8,    0,  187,    2, 0x08,    9 /* Private */,
+       9,    0,  188,    2, 0x08,   10 /* Private */,
+      10,    1,  189,    2, 0x08,   11 /* Private */,
+      11,    0,  192,    2, 0x08,   13 /* Private */,
+      12,    1,  193,    2, 0x08,   14 /* Private */,
+      14,    1,  196,    2, 0x08,   16 /* Private */,
+      15,    1,  199,    2, 0x08,   18 /* Private */,
+      16,    1,  202,    2, 0x08,   20 /* Private */,
+      17,    1,  205,    2, 0x08,   22 /* Private */,
+      18,    1,  208,    2, 0x08,   24 /* Private */,
+      19,    0,  211,    2, 0x08,   26 /* Private */,
+      20,    0,  212,    2, 0x08,   27 /* Private */,
+      21,    0,  213,    2, 0x08,   28 /* Private */,
+      22,    1,  214,    2, 0x08,   29 /* Private */,
+      23,    1,  217,    2, 0x08,   31 /* Private */,
+      24,    0,  220,    2, 0x08,   33 /* Private */,
+      25,    0,  221,    2, 0x08,   34 /* Private */,
+      26,    0,  222,    2, 0x08,   35 /* Private */,
+      27,    0,  223,    2, 0x08,   36 /* Private */,
+      28,    0,  224,    2, 0x08,   37 /* Private */,
+      29,    1,  225,    2, 0x08,   38 /* Private */,
+      31,    0,  228,    2, 0x08,   40 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -222,6 +246,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void, QMetaType::Int,    4,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   30,
     QMetaType::Void,
 
        0        // eod
@@ -293,6 +321,15 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'put_settings'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_screen_pressed'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_2_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'gif_timer'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'error_message'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'gif_creator'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -327,6 +364,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 20: _t->save_settings(); break;
         case 21: _t->put_settings(); break;
         case 22: _t->on_screen_pressed(); break;
+        case 23: _t->on_pushButton_2_clicked(); break;
+        case 24: _t->gif_timer(); break;
+        case 25: _t->error_message((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 26: _t->gif_creator(); break;
         default: ;
         }
     }
@@ -351,13 +392,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 23)
+        if (_id < 27)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 23;
+        _id -= 27;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 23)
+        if (_id < 27)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 23;
+        _id -= 27;
     }
     return _id;
 }

@@ -2,16 +2,20 @@
 
 #include "ui_mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
     myWidget = new widget;
     ui->gridLayout_widget->addWidget(myWidget, 0, 0);
+    gifTmr = new QTimer(0);
+    connect(gifTmr, SIGNAL(timeout()), this, SLOT(gif_creator()));
     put_settings();
     setWindowTitle("3D_Viewer");
 }
 
 MainWindow::~MainWindow() {
+    gifTmr->~QTimer();
     save_settings();
     delete myWidget;
     delete ui;
@@ -275,3 +279,51 @@ void MainWindow::on_screen_pressed() {
         myWidget->grabFramebuffer().save(file);
     }
 }
+
+
+
+
+
+void MainWindow::on_pushButton_2_clicked() {
+    gifFileName = QFileDialog::getSaveFileName(this, tr("Save GIF"), ".gif",
+                                               tr("Gif Files (*.gif)"));
+    if (gifFileName != "") {
+        ui->pushButton_2->setDisabled(true);
+        gifImg = new QGifImage;
+        gifImg->setDefaultDelay(10);
+        gif_timer();
+    } else {
+        error_message("Нет папки");
+    }
+}
+
+void MainWindow::gif_timer() {
+    gifTmr->setInterval(100);
+    gifTmr->start();
+}
+
+void MainWindow::error_message(QString message) {
+    QMessageBox messageBox;
+    messageBox.setFixedSize(500, 200);
+    messageBox.information(0, "Info", message);
+}
+
+void MainWindow::gif_creator() {
+
+    gifImg->addFrame(image);
+    if (numberFps == 50) {
+        gifTmr->stop();
+        gifImg->save(gifFileName);
+        numberFps = 0;
+        error_message("Gif saved.");
+        gifImg->~QGifImage();
+        ui->pushButton_2->setText("Gif");
+        ui->pushButton_2->setEnabled(true);
+    }
+    ++numberFps;
+    if (!ui->pushButton_2->isEnabled()) {
+        ui->pushButton_2->setText(QString::number(numberFps / 10));
+    }
+}
+
+
