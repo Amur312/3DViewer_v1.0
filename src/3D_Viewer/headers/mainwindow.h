@@ -12,7 +12,7 @@
 #include <QStandardPaths>
 #include <QMovie>
 #include <QImageWriter>
-
+//
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
