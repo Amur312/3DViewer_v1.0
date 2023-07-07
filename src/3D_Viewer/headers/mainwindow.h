@@ -26,6 +26,7 @@ public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
     QImage image;
+
 private slots:
     void on_pushButton_clicked();
 
@@ -71,15 +72,23 @@ private slots:
     void put_settings();
 
     void on_screen_pressed();
-    void on_pushButton_2_clicked();
-    void gif_timer();
-    void error_message(QString message);
-    void gif_creator();
+    void on_gif_button_clicked();
+    void start_timer_gif();
+    void timeUpdate();
+    void record_gif();
+
 private:
     void form_color(float* r, float* g, float* b, float value);
     Ui::MainWindow* ui;
     widget* myWidget;
     int numberFps;
+    int frameCount;
+    QString file_name;
+      QTimer* timerGIF;  // идентификатор таймера
+      int frame;
+      QGifImage* gif;
+      QFile* ptr_save_file;
+
     QTimer *gifTmr;
     QGifImage *gifImg;
     QString gifFileName;

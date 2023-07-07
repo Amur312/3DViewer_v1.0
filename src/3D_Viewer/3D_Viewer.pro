@@ -1,5 +1,5 @@
 QT       += core gui opengl openglwidgets
-include(QtGifImage/src/gifimage/qtgifimage.pri)
+include(QtGifImag/src/gifimage/qtgifimage.pri)
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
